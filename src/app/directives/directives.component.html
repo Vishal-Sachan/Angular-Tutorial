@@ -1,0 +1,15 @@
+<h1>Ng-if</h1>
+<div>
+    <h1 *ngIf="option; else elseblock">
+        Displaying only if option is true
+    </h1>
+    <ng-template #elseblock>
+        <h1>
+            Displaying only if option is False
+        </h1>
+    </ng-template>
+</div>
+<h1>Ng-for</h1>
+<div *ngFor="let car of cars; index as i">
+    <h2>Car at {{i+1}} number is of type {{car}}</h2>
+</div>`
