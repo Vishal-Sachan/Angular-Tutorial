@@ -11,6 +11,7 @@ import { UsersComponent } from './users/users.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { CarsService } from './cars.service';
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [UsersService],
+  providers: [UsersService, CarsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
