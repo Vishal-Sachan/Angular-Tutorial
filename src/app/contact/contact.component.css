@@ -1,10 +1,11 @@
 div {
+  border-radius: 15px;
   font-size: 28px;
   text-align: center;
   margin: auto;
   width: 60%;
   padding: 20px;
   margin-top: 20px;
-  background-color: rgb(38, 135, 199);
+  background-color: rgb(199, 60, 42);
   height: 40vh;
 }
