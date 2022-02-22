@@ -1,10 +1,23 @@
 div {
-  font-size: 28px;
-  text-align: center;
+  border-radius: 15px;
+  font-size: 20px;
+  text-align: left;
   margin: auto;
-  width: 60%;
+  width: max-content;
   padding: 20px;
   margin-top: 20px;
   background-color: rgb(187, 116, 36);
-  height: 40vh;
+}
+
+.table-row {
+  font-size: 18px;
+}
+td,
+th {
+  padding: 5px;
+  padding-left: 20px;
+}
+table {
+  width: 100%;
+  border-spacing: 10px 0;
 }
