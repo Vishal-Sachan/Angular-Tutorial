@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
+  log(x: {}) {
+    console.log(x)
+
+  }
   constructor() { }
 
   ngOnInit(): void {
