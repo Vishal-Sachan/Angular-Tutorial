@@ -3,15 +3,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { UsersService } from './users.service';
-import { HomepageComponent } from './homepage/homepage.component';
-import { CarsComponent } from './cars/cars.component';
-import { UsersComponent } from './users/users.component';
-import { DirectivesComponent } from './directives/directives.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { CarsService } from './cars.service';
+import { HeaderComponent } from './components/header/header.component';
+import { UsersService } from './services/users.service';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { CarsComponent } from './components/cars/cars.component';
+import { UsersComponent } from './components/users/users.component';
+import { DirectivesComponent } from './components/directives/directives.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { CarsService } from './services/cars.service';
 
 
 @NgModule({
