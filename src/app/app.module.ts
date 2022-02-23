@@ -12,6 +12,8 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CarsService } from './services/cars.service';
+import { FooterComponent } from './components/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,12 +26,14 @@ import { CarsService } from './services/cars.service';
     UsersComponent,
     DirectivesComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [UsersService, CarsService],
   bootstrap: [AppComponent]

@@ -1,12 +1,63 @@
 <div class="main-container">
-    <div class="container-2">
-        This is Home Page!
+    <div class="mini-container">
+        Please Enter User Details!
     </div>
-    <div class="container-3">
-        <li>Navigate to Users to see all users fetched from URL</li>
-        <li>Navigate to Cars to see all cars from database</li>
-        <li>Navigate to Directives to see demo work on ngIF and ngFor</li>
-        <li>Navigate to About for Details</li>
-        <li>Navigate to Contact for Cantact Details</li>
+    <div class="form-container">
+        <form #userForm="ngForm" (submit)="log(userForm.value)">
+            <div class="form-group">
+                <label for="firstName">First Name
+                    <input type="text" id="firstName" name="firstName" ngModel required #firstName="ngModel">
+                    <div class="warning" *ngIf="firstName.touched && firstName.invalid">
+                        First Name is required
+                    </div>
+                </label>
+                <label for="lastName">Last Name
+                    <input type="text" id="lastName" name="lastName" ngModel required #lastname="ngModel">
+                    <div class="warning" *ngIf="lastname.touched && lastname.invalid">
+                        Last Name is required
+                    </div>
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="age">Age
+                    <input type="text" maxlength="2" id="age" name="age" ngModel #age="ngModel" required>
+                    <div class="warning" *ngIf="age.touched && age.invalid">
+                        Age is required
+                    </div>
+                </label>
+                <label for="ph-number">Phone Number
+                    <input type="tel" id="number" name="number" ngModel maxlength="10" minlength="10" required
+                        #number="ngModel">
+                    <div class="warning" *ngIf="number.touched && number.invalid">
+                        Phone Number is required
+                    </div>
+                </label>
+                <label for="gender">Gender
+                    <select id="gender" name="gender" ngModel required #gender="ngModel">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <div class="warning" *ngIf="gender.touched && gender.invalid">
+                        Gender is required
+                    </div>
+                </label>
+            </div>
+            <div class="form-group-2">
+                <label for="address">Address
+                    <input type="text" id="address" name="address" ngModel #address="ngModel" required>
+                    <div class="warning" *ngIf="address.touched && address.invalid">
+                        Please enter the Address
+                    </div>
+                </label>
+                <label for="email">Email
+                    <input type="email" id="email" name="email" ngModel #email="ngModel" required>
+                    <div class="warning" *ngIf="email.touched && email.invalid">
+                        Please enter the Email
+                    </div>
+                </label>
+            </div>
+            <button type="submit" id="btn-submit">Submit</button>
+        </form>
     </div>
 </div>
