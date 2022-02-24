@@ -12,7 +12,7 @@ export class CarsService {
   private _url: string = environment.carsUrl;
   constructor(private http: HttpClient) { }
 
-  getCars(): Observable<Icars> {
-    return this.http.get<Icars>(this._url);
+  getCars(): Observable<Icars[]> {
+    return this.http.get<Icars[]>(this._url);
   }
 }
