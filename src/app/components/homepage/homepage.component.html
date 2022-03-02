@@ -3,7 +3,8 @@
         Please Enter User Details!
     </div>
     <div class="form-container">
-        <form #userForm="ngForm" (submit)="log(userForm.value)">
+        <!-- <form #userForm="ngForm" (submit)="log(userForm.value)"> -->
+        <form [formGroup]="form">
             <div class="form-group">
                 <label for="firstName">First Name
                     <input type="text" id="firstName" name="firstName" ngModel required #firstName="ngModel">
@@ -25,7 +26,7 @@
                         *Age is required
                     </div>
                 </label>
-                <label for="ph-number">Phone Number
+                <label for="number">Phone Number
                     <input type="tel" id="number" name="number" ngModel maxlength="10" minlength="10" required
                         #number="ngModel">
                     <div class="warning" *ngIf="number.touched && number.invalid">
