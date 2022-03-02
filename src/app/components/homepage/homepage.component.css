@@ -2,10 +2,10 @@
   border-radius: 40px;
   align-content: center;
   margin: auto;
-  width: 45%;
-  padding: 20px;
+  width: 42%;
+  padding: 15px;
   margin-top: 20px;
-  background-color: rgb(38, 135, 199);
+  background-color: rgb(255, 255, 255);
   height: max-content;
 }
 
@@ -23,12 +23,16 @@
   width: max-content;
   margin-top: 25px;
 }
+
+#btn-submit:disabled {
+  background-color: rgb(163, 163, 163);
+}
 .form-container {
   border-radius: 20px;
   padding: 15px;
   margin: 20px;
   height: max-content;
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   top: 15%;
 }
 form input,
@@ -36,6 +40,8 @@ select {
   padding: 10px;
   font-size: 20px;
   border: 1px solid darkgray;
+  border-bottom: 2.5px solid darkgray;
+  border-right: 2.5px solid darkgray;
   border-radius: 15px;
   width: 100%;
   margin-bottom: 10px;
@@ -65,4 +71,7 @@ label {
 div > label:before {
   content: "*";
   color: red;
+}
+select > option {
+  font-size: 18px;
 }
