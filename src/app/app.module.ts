@@ -4,15 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { UsersService } from './services/users.service';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { CarsComponent } from './components/cars/cars.component';
 import { UsersComponent } from './components/users/users.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { CarsService } from './services/cars.service';
 import { FooterComponent } from './components/footer/footer.component';
+import { UsersService } from './services/users.service';
+import { CarsService } from './services/cars.service';
 import { FormsModule } from '@angular/forms';
 
 
