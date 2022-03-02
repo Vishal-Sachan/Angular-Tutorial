@@ -9,15 +9,15 @@ import { Icars } from './cars';
 })
 export class CarsComponent implements OnInit {
 
-  public cars: Icars[] = []
+  public cars: any = []
 
   constructor(private CarsList: CarsService) { }
 
   ngOnInit(): void {
-    this.CarsList.getCars().subscribe(response => {
-      this.cars = response
-      console.log(this.cars)
-    });
+    // this.CarsList.getCars().subscribe(response => {
+    //   this.cars = response
+    //   console.log(this.cars)
+    // });
   }
 
 }
