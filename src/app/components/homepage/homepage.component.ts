@@ -10,7 +10,9 @@ export class HomepageComponent implements OnInit {
 
   log(x: {}) {
     console.log(x)
-
+  }
+  reset() {
+    this.form.reset();
   }
 
   emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
