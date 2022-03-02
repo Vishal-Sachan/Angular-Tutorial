@@ -3,7 +3,7 @@
         Please Enter User Details!
     </div>
     <div class="form-container">
-        <form [formGroup]="form" (submit)="log(form.value)">
+        <form [formGroup]="form" (submit)="log(form.value);reset()">
             <div class="form-group">
                 <label for="firstName">First Name
                     <input type="text" id="firstName" formControlName="firstName" maxlength="20">
