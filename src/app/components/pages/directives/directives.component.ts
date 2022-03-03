@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./directives.component.css']
 })
 export class DirectivesComponent implements OnInit {
-  public option=true
-  public cars=['Hatchback','Sedan','SUV','Sports','Hypercar']
-
+  public option = true
+  public cars = ['Hatchback', 'Sedan', 'SUV', 'Sports', 'Hypercar']
+  public date = Date.now()
   constructor() { }
 
   ngOnInit(): void {
