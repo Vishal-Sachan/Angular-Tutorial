@@ -16,7 +16,7 @@
                         </div>
                     </div>
                 </label>
-                <label for="lastName">Last Name
+                <label for="lastName" id=lastname-label>Last Name
                     <input type="text" id="lastName" formControlName="lastName" maxlength="20">
                     <div class="warning" *ngIf="lastName.touched && lastName.invalid">
                         <div *ngIf="lastName.errors['required']">
@@ -41,6 +41,7 @@
                     </div>
                 </label>
                 <label for="phone">Phone Number
+                    <!-- <input type="tel" value="+91"> -->
                     <input type="tel" id="phone" formControlName="phone" maxlength="10">
                     <div class="warning" *ngIf="phone.touched && phone.invalid">
                         <div *ngIf="phone.errors['required']">
@@ -86,7 +87,7 @@
                             *Email is required
                         </div>
                         <div *ngIf="email.errors['pattern']">
-                            *Invalid type ex "john20@gmail.com"
+                            *Invalid type example: "john20@gmail.com"
                         </div>
                     </div>
                 </label>

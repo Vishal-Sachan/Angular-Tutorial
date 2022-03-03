@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-homepage',
-  templateUrl: './homepage.component.html',
-  styleUrls: ['./homepage.component.css']
+  selector: 'app-user-form',
+  templateUrl: './user-form.component.html',
+  styleUrls: ['./user-form.component.css']
 })
-export class HomepageComponent implements OnInit {
+export class UserFormComponent implements OnInit {
 
   log(x: {}) {
     console.log(x)
@@ -16,6 +16,7 @@ export class HomepageComponent implements OnInit {
   }
 
   emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+  emailPattern2 = '[a-z0-9]+[@]+[a-z]+[.]+[a-z]*';
 
   form = new FormGroup({
     firstName: new FormControl('', [
@@ -24,7 +25,6 @@ export class HomepageComponent implements OnInit {
     ]),
     lastName: new FormControl('', [
       Validators.pattern('[a-zA-Z]*'),
-      Validators.maxLength(10)
     ]),
     age: new FormControl('', [
       Validators.required,
@@ -71,7 +71,6 @@ export class HomepageComponent implements OnInit {
   get gender() {
     return this.form.get('gender')
   }
-
 
   constructor() { }
 

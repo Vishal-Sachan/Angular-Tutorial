@@ -40,8 +40,8 @@ select {
   padding: 10px;
   font-size: 20px;
   border: 1px solid darkgray;
-  border-bottom: 2.5px solid darkgray;
-  border-right: 2.5px solid darkgray;
+  border-bottom: 3px solid darkgray;
+  border-right: 3px solid darkgray;
   border-radius: 15px;
   width: 100%;
   margin-bottom: 10px;
@@ -70,7 +70,11 @@ label {
 }
 div > label:before {
   content: "*";
+  font-size: larger;
   color: red;
+}
+#lastname-label:before {
+  display: none;
 }
 select > option {
   font-size: 18px;

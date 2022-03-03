@@ -1,42 +1,27 @@
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule, routingComponents } from './app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { HomepageComponent } from './components/homepage/homepage.component';
-import { CarsComponent } from './components/cars/cars.component';
-import { UsersComponent } from './components/users/users.component';
-import { DirectivesComponent } from './components/directives/directives.component';
-import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { DirectivesComponent } from './components/pages/directives/directives.component';
+import { AboutComponent } from './components/pages/about/about.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { UsersService } from './services/users.service';
-import { CarsService } from './services/cars.service';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    routingComponents,
-    HomepageComponent,
-    CarsComponent,
-    UsersComponent,
     DirectivesComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule
   ],
-  providers: [UsersService, CarsService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

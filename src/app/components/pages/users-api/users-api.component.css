@@ -1,22 +1,27 @@
 .container1 {
   border-radius: 40px;
-  font-size: 26px;
+  font-size: 22px;
   text-align: center;
   margin: auto;
-  width: 45%;
+  width: max-content;
   padding: 20px;
   margin-top: 20px;
-  background-color: rgb(187, 116, 36);
+  background-color: rgb(150, 150, 150);
+  /* border-bottom: 5px solid darkgray;
+  border-right: 5px solid darkgray; */
+  box-shadow: 15px 15px 15px rgb(80, 80, 80);
 }
 
 .table-row {
-  font-size: 22px;
+  font-size: 18px;
 }
+
 td,
 th {
   padding: 5px;
-  padding-left: 20px;
+  padding-left: 25px;
 }
+
 table {
   width: 100%;
   text-align: left;
