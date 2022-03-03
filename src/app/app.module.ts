@@ -15,14 +15,16 @@ import { FooterComponent } from './components/footer/footer.component';
     DirectivesComponent,
     AboutComponent,
     ContactComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
 
