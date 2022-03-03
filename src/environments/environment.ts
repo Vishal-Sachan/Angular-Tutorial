@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   apiUrl: "https://reqres.in/api/users",
-  carsUrl: "https://localhost:5500/cars"
+  carsUrl: "http://localhost:5500/cars"
 };
 
 /*

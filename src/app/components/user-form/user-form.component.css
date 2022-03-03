@@ -1,0 +1,81 @@
+.main-container {
+  border-radius: 40px;
+  align-content: center;
+  margin: auto;
+  width: 42%;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  height: max-content;
+}
+
+.mini-container {
+  font-size: 28px;
+  text-align: center;
+}
+
+#btn-submit {
+  background-color: rgb(41, 190, 48);
+  font-size: 22px;
+  padding: 10px;
+  border: 2px solid rgb(78, 78, 78);
+  border-radius: 20px;
+  width: max-content;
+  margin-top: 25px;
+}
+
+#btn-submit:disabled {
+  background-color: rgb(163, 163, 163);
+}
+.form-container {
+  border-radius: 20px;
+  padding: 15px;
+  margin: 20px;
+  height: max-content;
+  background-color: #ffffff;
+  top: 15%;
+}
+form input,
+select {
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid darkgray;
+  border-bottom: 3px solid darkgray;
+  border-right: 3px solid darkgray;
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  max-width: 100%;
+  gap: 7%;
+  margin: 5px 0;
+  display: flex;
+}
+label {
+  font-size: 20px;
+}
+
+.warning {
+  font-size: 16px;
+  color: red;
+}
+.form-group-2 input {
+  width: 100%;
+}
+div > label:before {
+  content: "*";
+  font-size: larger;
+  color: red;
+}
+#lastname-label:before {
+  display: none;
+}
+select > option {
+  font-size: 18px;
+}
