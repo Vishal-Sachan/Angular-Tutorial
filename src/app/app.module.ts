@@ -4,18 +4,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { DirectivesComponent } from './components/pages/directives/directives.component';
-import { AboutComponent } from './components/pages/about/about.component';
-import { ContactComponent } from './components/pages/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HomePageComponent } from './components/pages/home-page/home-page.component';
+import { DatePipesComponent } from './components/pages/date-pipes/date-pipes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DirectivesComponent,
-    AboutComponent,
-    ContactComponent,
-    FooterComponent
+    FooterComponent,
+    HomePageComponent,
+    DatePipesComponent
   ],
   imports: [
     BrowserModule,
