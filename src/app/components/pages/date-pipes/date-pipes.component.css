@@ -1,0 +1,24 @@
+.container1 {
+  border-radius: 40px;
+  font-size: 22px;
+  text-align: left;
+  margin: auto;
+  width: max-content;
+  padding: 2%;
+  margin-top: 20px;
+  background-color: rgb(150, 150, 150);
+  /* border-bottom: 5px solid darkgray;
+    border-right: 5px solid darkgray; */
+  box-shadow: 15px 15px 15px rgb(80, 80, 80);
+}
+li {
+  padding: 5px;
+  color: black;
+  font-size: 22px;
+}
+a {
+  font-size: 22px;
+  padding: 5px;
+  color: rgb(172, 28, 23);
+  font-weight: 600;
+}
