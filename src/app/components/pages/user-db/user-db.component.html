@@ -1,1 +1,43 @@
-<p>user-db works!</p>
+<div class="container1">
+    <div class="container-2">
+        List of All Users Available
+    </div>
+    <table>
+        <tr class="table-row-heading">
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Phone No</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Date Modified</th>
+        </tr>
+        <tr class="table-row" *ngFor="let user of users">
+            <td>
+                {{user.firstName}}
+            </td>
+            <td>
+                {{user.lastName}}
+            </td>
+            <td>
+                {{user.age}}
+            </td>
+            <td>
+                {{user.gender}}
+            </td>
+            <td>
+                +91-{{user.phone}}
+            </td>
+            <td>
+                {{user.address}}
+            </td>
+            <td>
+                {{user.email}}
+            </td>
+            <td>
+                {{user.dateModified}}
+            </td>
+        </tr>
+    </table>
+</div>
