@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { UserFormRoutingModule } from './user-form-routing.module';
 import { UserFormComponent } from './user-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { UserDBService } from 'src/app/services/user-db.service';
 
 
 @NgModule({
@@ -12,7 +14,11 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     UserFormRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
+  ],
+  providers: [
+    UserDBService
   ]
 })
 export class UserFormModule { }

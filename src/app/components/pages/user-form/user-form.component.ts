@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UserDBService } from 'src/app/services/user-db.service';
 
 @Component({
   selector: 'app-user-form',
@@ -8,10 +9,18 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class UserFormComponent implements OnInit {
 
-  log(x: {}) {
-    console.log(x)
+  constructor(public usersList: UserDBService) { }
+
+  public date = Date.now()
+
+  addUser(data: any) {
+    data.dateModified = this.date
+    console.log(data)
+    this.usersList.addUsersData(data)
   }
+
   reset() {
+    alert("Data Entered Successfully")
     this.form.reset();
   }
 
@@ -72,7 +81,6 @@ export class UserFormComponent implements OnInit {
     return this.form.get('gender')
   }
 
-  constructor() { }
 
   ngOnInit(): void {
   }

@@ -6,9 +6,9 @@ export const environment = {
   production: false,
   apiUrl: "https://reqres.in/api/users",
   carsUrl: "http://localhost:5500/cars",
-  usersGETUrl: "http://localhost:3000/users",
-  usersPOSTUrl: "http://localhost:3000/users/add",
-  usersDELETEUrl: "http://localhost:3000/users/delete",
+  usersGETUrl: "http://localhost:4000/users",
+  usersPOSTUrl: "http://localhost:4000/users/add",
+  usersDELETEUrl: "http://localhost:4000/users/delete",
 };
 
 /*

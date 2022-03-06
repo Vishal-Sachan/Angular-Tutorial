@@ -30,3 +30,13 @@ table {
   font-size: 28px;
   text-align: center;
 }
+.btn-delete {
+  padding: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 50%;
+  border: 1px solid rgb(0, 0, 0);
+  color: black;
+  background-color: rgb(185, 35, 35);
+  font-size: 16px;
+}

@@ -14,6 +14,18 @@ export class UserDBService {
   private deleteUrl: string = environment.usersDELETEUrl;
   constructor(private http: HttpClient) { }
 
+  getUsersData() {
+    this.getUsers().subscribe(res => {
+      this.users = res
+    })
+  }
+
+  addUsersData(data: any) {
+    this.postUsers(data).subscribe(res => {
+      this.users = res
+    })
+  }
+
   deleteUsersData(data: any) {
     this.deleteUsers(data).subscribe(res => {
       this.getUsers().subscribe(res => {

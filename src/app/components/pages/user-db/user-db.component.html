@@ -4,16 +4,16 @@
     </div>
     <table>
         <tr class="table-row-heading">
-            <th>First Name</th>
-            <th>Last Name</th>
+            <th>F-Name</th>
+            <th>L-Name</th>
             <th>Age</th>
             <th>Gender</th>
             <th>Phone No</th>
             <th>Address</th>
             <th>Email</th>
-            <th>Date Modified</th>
+            <th>Date of Entry</th>
         </tr>
-        <tr class="table-row" *ngFor="let user of users">
+        <tr class="table-row" *ngFor="let user of usersList.users">
             <td>
                 {{user.firstName}}
             </td>
@@ -36,8 +36,9 @@
                 {{user.email}}
             </td>
             <td>
-                {{user.dateModified}}
+                {{user.dateModified | date:"medium"}}
             </td>
+            <button class="btn-delete" (click)="usersList.deleteUsersData({id:user._id});log(user)">x</button>
         </tr>
     </table>
 </div>
