@@ -3,7 +3,7 @@
         Please Enter User Details!
     </div>
     <div class="form-container">
-        <form [formGroup]="form" (submit)="log(form.value);reset()">
+        <form [formGroup]="form" (submit)="addUser(form.value);reset()">
             <div class="form-group">
                 <label for="firstName">First Name
                     <input type="text" id="firstName" formControlName="firstName" maxlength="20">
@@ -57,9 +57,9 @@
                 </label>
                 <label for="gender">Gender
                     <select id="gender" formControlName="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="others">Others</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Others">Others</option>
                     </select>
                     <div class="warning" *ngIf="gender.touched && gender.invalid">
                         <div *ngIf="gender.errors['required']">

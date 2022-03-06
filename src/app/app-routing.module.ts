@@ -9,6 +9,7 @@ import { DatePipesComponent } from './components/pages/date-pipes/date-pipes.com
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'form', loadChildren: () => import("./components/pages/user-form/user-form.module").then(m => m.UserFormModule) },
+  { path: 'users', loadChildren: () => import("./components/pages/user-db/user-db.module").then(m => m.UserDbModule) },
   { path: 'user', loadChildren: () => import("./components/pages/users-api/users.module").then(m => m.UsersApiModule) },
   { path: 'cars', loadChildren: () => import("./components/pages/cars/cars.module").then(m => m.CarsModule) },
   { path: 'directives', component: DirectivesComponent },

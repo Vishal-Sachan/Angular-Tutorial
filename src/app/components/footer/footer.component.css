@@ -1,5 +1,5 @@
 .footer {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -9,4 +9,5 @@
   text-align: center;
   margin: 0;
   background-color: #333;
+  overflow: hidden;
 }
